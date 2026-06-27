@@ -12,7 +12,7 @@ This project implements an end-to-end parallel and distributed software system f
   * C++17 Compiler (AppleClang or GCC)
   * `cmake`, `librdkafka`, `mysql-client`, `libomp`
 
-## 3. Build Instructions (빌드 방법) 
+## 3. Build Instructions 
 1. Install required C++ libraries via Homebrew:
    ```bash
    brew install cmake librdkafka mysql-client libomp
@@ -22,7 +22,7 @@ This project implements an end-to-end parallel and distributed software system f
     cmake ..
     make
 
-## 4. Execution Instructions (실행 방법)
+## 4. Execution Instructions 
 1. Start the Distributed Infrastructure:
     Boot up Kafka and MySQL using Docker Compose in the project root directory.
    ```bash
@@ -38,7 +38,7 @@ This project implements an end-to-end parallel and distributed software system f
     ```bash
    python3 scripts/producer.py
 
-## 5. Experimental Procedures (성능 평가 실험 방법)
+## 5. Experimental Procedures 
 To reproduce the quantitative Thread Scaling experiments, the worker executable accepts three arguments: [Thread Count], [Batch Size], and [Iterations].  
 Run the following commands sequentially to observe performance scaling:
     ```bash
